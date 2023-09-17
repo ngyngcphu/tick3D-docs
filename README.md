@@ -10,6 +10,7 @@
   </h2>
 </div>
 
+# Project description
 We are intent to build a 3D Printing Service for serving those who want to own a 3D model for their purposes. We’ve got the hardware resource of a 3D printer called **FLSUN-V400**.
 
 The system includes only one 3D printer located in one place. This printer has the following specifications: brand/manufacturer name, printer model, short description, firmware, local IP address, dashboard web interface.
@@ -35,3 +36,9 @@ The system only accepts `.gcode` files. Furthermore, that `.gcode` file must be 
 The system must log the history of each order, including: time of order, time of delivery, information of the person placing the order, the amount paid,…
 
 The system is provided through a web-based app, **does not support mobile app.**
+
+# References
+1. Klipper (Operating System): https://www.klipper3d.org/
+2. Moonraker (API Web Server): https://moonraker.readthedocs.io/
+3. Mainsail (Web Interface): https://docs.mainsail.xyz/
+4. KlipperScreen (Screen Interface): https://klipperscreen.readthedocs.io/
