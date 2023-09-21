@@ -51,5 +51,39 @@ Hệ thống phải ghi lại lịch sử của mỗi đơn hàng, bao gồm: th
 
 Hệ thống được cung cấp thông qua ứng dụng web-based app, *không hỗ trợ mobile app*.
 
+== Stakeholders của dự án
+
+Dự án này bao gồm 2 stakeholders:
+#block(inset: (left: 1cm))[
+    1. Người quản lý: Là người trực tiếp quản lý máy in, kiểm tra và cập nhật các đơn hàng sang các trạng thái.
+    2. Khách hàng: Là người đặt các mô hình 3D.
+]
+
 == Phạm vi của dự án
+
+Dự án được chia thành 2 mức thực hiện: *Thủ công* và *Tự động*. Nhóm sẽ ưu tiên hiện thực hệ thống ở mức thủ công.
+
+=== Thủ công
+
+Tất cả đơn hàng được gửi tới người quản lý qua hệ thống. Người quản lý sẽ tự mình upload các file `.gcode` trong các đơn đặt hàng lên dashboard web của máy in. Quy trình này yêu cầu hệ thống có các tính năng chính sau:
+
+#block(inset: (left: 1cm))[
+    1. *Lựa chọn mô hình 3D*: cho phép khách hàng tải lên file `.gcode` phù hợp với loại máy   in FLSUN-V400 hoặc bao gồm danh sách các mô hình 3D có sẵn đã tích hợp file `.gcode` (>= 100 mô hình) cho khách hàng lựa chọn. Ngoài ra, hệ thống còn hỗ trợ phân loại mô hình theo danh mục, tìm kiếm theo tên và lọc theo giá tiền.
+    2. *Quản lý mô hình 3D*: Cho phép người quản lý thao tác với các mô hình 3D mà hệ thống đề xuất cho khách hàng, gồm thêm/xóa/sửa. Yêu cầu này đòi hỏi hệ thống phải phân quyền người dùng, bao gồm 2 vai trò: người quản lý và khách hàng. 
+    3. *Đặt mô hình 3D*: Khách hàng cần phải đăng kí một tài khoản để có thể đặt được mô hình 3D sau khi upload file hoặc lựa chọn sản phẩm mẫu.
+    4. *Xác nhận và gửi đơn hàng*: Khách hàng sau khi đặt mô hình và xác nhận xong thì có thể gửi đơn hàng đi để được xử lý.
+    5. *Xử lý đơn hàng*: Người quản lý có thể xem thông tin đơn hàng và chuyển đơn hàng sang các trạng thái tiếp theo như: đã đặt, đang giao, đã giao, đã thanh toán,...
+    6. *Thanh toán online*: Thực hiện thanh toán qua Momo.
+]
+
+=== Tự động
+
+Tất cả đơn hàng được lưu trên hệ thống. Người quản lý chỉ cần nhấn nút `Start printing` thì file `.gcode` tự động được gửi tới máy in mà không cần thông qua dashboard web của máy in. Tuy nhiên, cần có một người trực tại máy in để gỡ sản phẩm ra khỏi bàn in sau khi in xong và nhấn nút `Continue printing` để tiếp tục in sản phẩm tiếp theo trong hàng đợi của hệ thống.
+
+Mức hiện thực này bao gồm tất cả các tính năng của mức hiện thực thủ công, giảm thiểu tác vụ cho người quản lý và hỗ trợ thêm một số tính năng cho cả hai đối tượng, bao gồm:
+
+#block(inset: (left: 1cm))[
+    - *Màn hình điều khiển máy in phía người quản lý*: Người quản lý có thể xem được tiến độ sản phẩm đang được in, nhiệt độ sản phẩm, khối lượng nhựa in cần sử dụng, thời gian in xong. Ngoài ra, có thể thay đổi tốc độ in, tạm dừng in, kích hoạt hay vô hiệu hóa máy in.
+    - *Màn hình hiển thị sản phẩm phía khách hàng*: Khách hàng cũng có thể xem được tiến độ in và thời gian in xong của sản phẩm mà mình đặt mua.
+]
 #pagebreak()
