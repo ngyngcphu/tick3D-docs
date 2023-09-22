@@ -1,35 +1,90 @@
 = Phân tích yêu cầu
 
-Phân tích yêu cầu giúp người phát triển hệ thống định hình sơ bộ ra những gì cần làm trong hệ thống. Đối với dự án
-in ấn 3D, nhóm chia ra làm hai yêu cầu: yêu cầu chức năng và yêu cầu phi chức năng.
+Như đã đề cập ở phần Phạm vi dự án, nhóm sẽ ưu tiên mức hiện thực thủ công bao gồm sáu tính năng chính trên. Phần này sẽ mô tả chi tiết về toàn bộ yêu cầu chức năng và yêu cầu phi chức năng của hệ thống ở mức thủ công:
 
 == Yêu cầu chức năng
 
-Đối với dự án, các bên liên quan (stakeholders) trực tiếp đến hệ thống bao gồm người dùng (user) và người quản trị hệ
-thống (admin). Vì vậy chúng ta sẽ phân tích các yêu cầu chức năng dựa trên hai đối tượng này
+=== Lựa chọn mô hình 3D
 
-*- Người dùng:*
+Trường hợp khách hàng lựa chọn các mô hình 3D có sẵn, hệ thống phải cung cấp các chức năng: 
 #block(inset: (left:1cm))[
-    - Theo dõi danh sách các mẫu mô hình 3D.
-    - Tìm kiếm một mẫu sản phẩm nào đó.
-    - Đăng kí tài khoản.
-    - Yêu cầu hồi phục tài khoản trong trường hợp không nhớ mật khẩu.
-    - Phải được xác thực trước khi tải file và đặt hàng.
-    - Đặt một hoặc nhiều mô hình từ danh sách mô hình 3D có trên hệ thống.
-    - Kiểm tra giỏ hàng của họ.
-    - Thiết lập và tùy chỉnh thông tin về thanh toán, địa điểm nhận hàng. 
-    - Hủy đơn hàng nếu đơn hàng đó vẫn chưa được in.
-    - Theo dõi tình trạng đơn hàng: trạng thái, tiến trình in, thời gian hoàn thành, tổng chi phí.
-    - Theo dõi và edit thông tin cá nhân (profile).
+    - Phân chia các mô hình 3D theo các danh mục: Fashion, Hobby, Learning, Tools, Toys & Games, Art, Household.
+    - Hệ thống có mục *All Things* bao gồm tất cả các loại mô hình 3D.
+    - Các nhóm mô hình 3D được phân thành nhiều trang, mỗi trang chứa tối đa 10 mô hình.
+    - Mỗi mô hình 3D có một nút Like, hệ thống sẽ mặc định sắp xếp các mô hình 3D theo tiêu chí số lượt Like từ cao đến thấp.
+    - Sắp xếp các mô hình 3D theo giá tiền, mốc thời gian đăng. Lọc các mô hình 3D theo danh mục, khoảng thời gian. Giữ nguyên trạng thái lọc và tiêu chí sắp xếp khi chuyển trang. Trạng thái ban đầu của bộ lọc là *No filter*.
+    - Tìm kiếm các mô hình 3D theo tên. Hệ thống sẽ cố gắng tìm những mô hình 3D có tên giống như từ khóa đã nhập hoặc có tên gần giống. Nếu không tìm thấy, hiển thị danh sách rỗng kèm thông báo *Không tìm thấy*. Được phép áp dụng bộ lọc và tiêu chí sắp xếp khi màn hình xuất ra danh sách kết quả. Để quay về trạng thái trước khi tìm kiếm, nhấn nút *X* trên thanh tìm kiếm.
 ]
-*- Người quản lí hệ thống:*
+Trường hợp khách hàng upload file `.gcode` của riêng họ, hệ thống phải cung cấp các chức năng:
 #block(inset: (left:1cm))[
-    - Phải được xác thực.
-    - Theo dõi và quản lý đơn hàng của tất cả người dùng.
-    - Quan sát bất kỳ đơn hàng nào ở bất cứ thời điểm nào cũng như lịch sử in ấn.
-    - Chặn một người dùng trong việc sử dụng hệ thống trang web.
-    - Theo dõi bảng điều khiển in ấn: Tình trạng máy in, lịch sử in ấn,...
-    - Kích hoạt/bất hoạt máy in.
+    - Chỉ cho phép các file định dạng `.gcode` được upload lên hệ thống.
+    - Các file `.gcode` phải được generate từ chính loại máy in FLSUN-V400.
+]
+
+=== Quản lý mô hình 3D
+
+Người quản lý phải đăng nhập vào tài khoản admin để thực hiện chức năng này, bao gồm các thao tác:
+#block(inset: (left:1cm))[
+    - Thêm/xóa/sửa mô hình 3D.
+    - Khi thêm mô hình 3D: giá tiền, hình ảnh minh họa cũng phải được thêm vào.
+    - Việc xoá mô hình 3D không ảnh hưởng tới các đơn hàng đã tiếp nhận trước đó.
+    - Các mô hình 3D được chỉnh sửa, cập nhật không ảnh hưởng đến các đơn hàng đã thanh toán.
+]
+
+=== Đặt mô hình 3D
+
+Khách hàng phải đăng nhập vào tài khoản user để thực hiện chức năng này.  
+
+Trường hợp khách hàng chọn các mẫu mô hình 3D có sẵn, hệ thống phải cung cấp các chức năng:
+#block(inset: (left:1cm))[
+    - Thêm mô hình 3D vào giỏ hàng để lưu lại thông tin mô hình hoặc tiến hành đặt hàng. Khi thêm vào giỏ, khách hàng có thể chọn số lượng.
+    - Thông tin mô hình 3D trong giỏ hàng bao gồm: tên mô hình, đơn giá, số lượng.
+    - Khi người dùng thêm mô hình 3D nhiều lần, những mô hình trùng tên sẽ được cộng dồn với số lượng và giá tương ứng.
+    - Giỏ hàng phải thống kê được các mô hình 3D, số lượng, đơn giá của từng mô hình và tổng tiền của giỏ hàng.
+    - Xem và chỉnh sửa thông tin giỏ hàng.
+    - Khách hàng có thể xóa một hoặc nhiều mô hình ra khỏi giỏ hàng cùng lúc.
+]
+Trường hợp khách hàng đặt in các mô hình 3D dựa trên các file `.gcode` của họ, ngoài các thao tác trên giỏ hàng tương tự như trên, hệ thống còn phải cung cấp các chức năng:
+#block(inset: (left:1cm))[
+    - Khi nhấn nút `Upload file`, hệ thống sẽ hiện ra một modal window yêu cầu lựa chọn đơn hàng hoặc tạo một đơn hàng mới để chứa file đó.
+    - Cho phép upload nhiều file cho một đơn hàng.
+    - Đề xuất giá tiền để in mô hình 3D dựa vào các file `.gcode`.
+    - Cho phép kết hợp upload file và lựa chọn các mô hình 3D có sẵn.
+]
+
+=== Xác nhận và gửi đơn hàng
+
+Hệ thống phải cung cấp các chức năng:
+#block(inset: (left:1cm))[
+    - Cho phép chọn một hoặc nhiều mô hình 3D từ giỏ hàng để tiến hành đặt hàng.
+    - Có form cung cấp thông tin đặt hàng bao gồm tên khách hàng, số điện thoại, địa chỉ nhận hàng (phường, quận, địa chỉ thêm do khách hàng cung cấp) và ghi chú (nếu có).
+    - Hệ thống cung cấp tính năng tính phí ship dựa trên khoảng cách giao hàng và hiển thị thời gian giao hàng dự kiến.
+    - Phí ship được tính bằng 5000 VND cho 3 kilomet đầu tiên; 3000 VND cho mỗi kilomet tiếp theo và không vượt quá 30000 VNĐ. Khu vực giao hàng được giới hạn trong phạm vi TP HCM.
+    - Thời gian giao dự kiến được tính dựa trên quãng đường và lưu lượng giao thông tại thời điểm đặt hàng.
+    - Sau bước xác nhận đơn hàng và trước bước thanh toán, khách hàng có thể quay lại giỏ hàng để  mua thêm/xóa các mô hình 3D, chỉnh sửa thông tin đặt hàng.
+    - Khách hàng có thể chọn phương thức thanh toán là tiền mặt hoặc thanh toán online qua Momo.
+    - Sau khi tiến hành đặt hàng thành công, các mô hình 3D đã được đặt sẽ bị xóa khỏi giỏ hàng và lịch sử đặt hàng sẽ được ghi lại vào hệ thống.
+    - Cho phép hủy đơn hàng nếu vẫn chưa được in (trạng thái *Đang chờ xử lý*).
+    - Khách hàng có thể theo dõi tình trạng đơn hàng: Đang chờ xử lý; Đang in; Đang giao; Đã thanh toán.
+]
+
+=== Xử lý đơn hàng
+
+Người quản lý sẽ xem danh sách các đơn đặt hàng và cập nhật trạng thái của chúng. Việc này sẽ yêu cầu hệ thống cung cấp các tính năng sau:
+#block(inset: (left:1cm))[
+    - Hiển thị danh sách đơn hàng thành các mục tương ứng với trạng thái của chúng. Trạng thái đơn hàng bao gồm: Đang chờ xử lý -> Đang in -> Đang giao -> Đã thanh toán.
+    - Ở mỗi mục, đơn hàng được sắp xếp mặc định dựa trên thời gian đơn hàng đó được ghi nhận.
+    - Người quản lý có thể nhấn chọn từng đơn hàng để xem thông tin chi tiết.
+    - Người quản lý có thể nhấn chọn xử lý để từ chối hoặc chuyển đơn hàng sang trạng thái tiếp theo.
+    - Người quản lý có thể lựa chọn từ chối hoặc chấp nhận nhiều đơn hàng cùng một lúc.
+]
+
+=== Thanh toán đơn hàng
+Hệ thống hỗ trợ khách hàng thanh toán đơn hàng bằng tiền mặt và qua ví điện tử Momo:
+#block(inset: (left:1cm))[
+    - Khách hàng có thể lựa chọn 2 phương thức thanh toán: *Thanh toán bằng tiền mặt* hoặc *Thanh toán qua Momo*.
+    - Trường hợp khách hàng lựa chọn thanh toán qua Momo, màn hình sẽ xuất hiện một mã vạch (đã kèm số tiền) để người dùng quét mã. Mã sẽ có hiệu lực trong vòng 10 phút.
+    - Hệ thống thông báo thanh toán thành công/thất bại.
 ]
 
 == Yêu cầu phi chức năng

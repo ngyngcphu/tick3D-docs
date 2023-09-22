@@ -40,7 +40,7 @@ Vì thế, giải pháp phần mềm chúng tôi đưa ra là xây dựng một 
         \u{2218} Phần mềm sẽ đề xuất các mẫu mô hình 3D đã có sẵn các file `.gcode` cho người dùng lựa chọn.
     ]
     - *Màn hình hiển thị sản phẩm phía người dùng*: bao gồm các thông tin sau: tiến độ in ấn, thời gian hoàn thành in ấn, giá cả,...
-    - *Màn hình hiển thị điều khiển phía người quản lý*: tương đối giống với dashboard web của máy in và có thêm một số tính năng như: xem được số lượng đơn đặt hàng và tình trạng mỗi đơn hàng, kích hoạt/vô hiệu hóa máy in,...
+    - *Màn hình hiển thị điều khiển phía người quản lý*: tương đối giống với dashboard web của máy in và có thêm một số tính năng như: xem được số lượng đơn đặt hàng và tình trạng mỗi đơn hàng, kích hoạt/bất hoạt máy in,...
 ]
 
 Bởi vì hệ thống chỉ có một máy in, nếu có quá nhiều đơn đặt hàng cùng một thời điểm, chúng sẽ được xếp vào một hàng đợi. Người quản lý sẽ lấy sản phẩm ra khỏi máy in sau khi in xong, nhấn nút `Continue printing` trên hệ thống để đưa sản phẩm đầu tiên trong hàng đợi vào để tiếp tục việc in ấn.
@@ -83,7 +83,7 @@ Tất cả đơn hàng được lưu trên hệ thống. Người quản lý ch�
 Mức hiện thực này bao gồm tất cả các tính năng của mức hiện thực thủ công, giảm thiểu tác vụ cho người quản lý và hỗ trợ thêm một số tính năng cho cả hai đối tượng, bao gồm:
 
 #block(inset: (left: 1cm))[
-    - *Màn hình điều khiển máy in phía người quản lý*: Người quản lý có thể xem được tiến độ sản phẩm đang được in, nhiệt độ sản phẩm, khối lượng nhựa in cần sử dụng, thời gian in xong. Ngoài ra, có thể thay đổi tốc độ in, tạm dừng in, kích hoạt hay vô hiệu hóa máy in.
+    - *Màn hình điều khiển máy in phía người quản lý*: Người quản lý có thể xem được tiến độ sản phẩm đang được in, nhiệt độ sản phẩm, khối lượng nhựa in cần sử dụng, thời gian in xong. Ngoài ra, có thể thay đổi tốc độ in, tạm dừng in, kích hoạt/bất hoạt máy in.
     - *Màn hình hiển thị sản phẩm phía khách hàng*: Khách hàng cũng có thể xem được tiến độ in và thời gian in xong của sản phẩm mà mình đặt mua.
 ]
 #pagebreak()
