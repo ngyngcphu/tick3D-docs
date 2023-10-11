@@ -20,14 +20,19 @@
     [Postconditions], [Khách hàng đã lựa chọn được mô hình 3D hoặc Upload được file .gcode lên hệ thống.],
     [Normal Flow], 
        [ 1. Khách hàng có thể xem tất cả mô hình 3D ở mục *All things*.\
-         2. Khách hàng có thể xem các mô hình 3D theo các mục: Fashion, Hobby, Learning, Tools, Toys & Games, Art, Household.\
-         3. Khách hàng có thể tìm kiếm mô hình 3D theo tên mô hình.\
-         4. Khách hàng có thể tìm kiếm mô hình 3D theo các bộ lọc: theo danh mục, theo giá, theo mốc thời gian, theo khoảng thời gian.\
-         5. Khách hàng có thể xem chi tiết mô hình 3D.\
-         6. Khách hàng có thể Upload file .gcode của mô hình 3D lên hệ thống.\
+         2. Hệ thống sẽ hiển thị các model có sẵn theo các mục: Fashion, Hobby, Learning, Tools, Toys & Games, Art, Household.\
+         3. Hệ thống cung cấp một thanh tìm kiếm để khách hàng có thể tìm kiếm mô hình 3D theo tên mô hình.\        
+         4. Khách hàng có thể tìm kiếm mô hình 3D theo tên mô hình bằng cách nhập tên mô hình vào thanh tìm kiếm.\
+         5. Bên cạnh thanh tìm kiếm, hệ thống còn hiển thị thêm bộ lọc theo danh mục, theo giá, theo mốc thời gian, theo khoảng thời gian.
+         6. Khách hàng có thể tìm kiếm mô hình 3D theo các bộ lọc trên.\
+         7. Hệ thống sẽ hiển thị mỗi mô hình 3D dưới một khung bao gồm: hình ảnh model, thông tin model, giá tiền.\
+         8. Mỗi mô hình 3D sẽ có nút *Thêm vào giỏ hàng* để khách hàng thêm mô hình 3D vào giỏ hàng.\
+         9. Khi được thêm vào giỏ hàng, mô hình 3D sẽ được hiển thị trong giỏ hàng.\
+         10. Khách hàng có thể Upload file .gcode của mô hình 3D lên hệ thống.\
+         11. Hệ thống sẽ lưu thông tin file .gcode của khách hàng xuống CSDL và hiển thị ra màn hình như những mô hình có sẵn.\
   
     ],
-    [Exceptional flow], [*Ở bước 3*, Nếu hệ thống tìm kiếm không có kết quả trả về, hệ thống sẽ hiển thị danh sách rỗng và thông báo *Không tìm thấy*, Khách hàng có thể tìm kiếm theo bước 4, Để quay về trạng thái trước tìm kiếm, khách hàng có thể nhấn nút *X* trên thanh tìm kiếm.],
+    [Exceptional flow], [*Ở bước 4*, Nếu hệ thống tìm kiếm không có kết quả trả về, hệ thống sẽ hiển thị danh sách rỗng và thông báo *Không tìm thấy*, Khách hàng có thể tìm kiếm theo bước 5, Để quay về trạng thái trước tìm kiếm, khách hàng có thể nhấn nút *X* trên thanh tìm kiếm.],
 
 )
 #figure(caption: [Use-case lựa chọn mô hình 3D], table())
@@ -47,13 +52,22 @@
     [Preconditions], [Người quản lý đã truy cập được trang web và đăng nhập vào tài khoản admin hệ thống.],
     [Postconditions], [Người quản lý đã thêm, sửa, xóa được các mô hình 3D trong hệ thống.],
     [Normal Flow], 
-       [ 1. Người quản lý thêm mô hình 3D vào hệ thống, bao gồm cả hình ảnh minh họa và giá tiền.\
-         2. Người quản lý sửa mô hình 3D trong hệ thống.\
-         3. Người quản lý xóa mô hình 3D trong hệ thống.\
-    ],
+       [ 1. Hệ thống hiển thị toàn bộ các mô hình 3D dưới dạng một bảng bao gồm các cột: ID, Tên mô hình, Hình ảnh, Thông tin,   Giá tiền, Phân loại.\
+         2. Thông tin ở các hàng sẽ được chỉnh sửa dưới dạng text, trừ cột Hình ảnh (hiển thị bằng hình) và Phân loại (hiển thị bằng list). \
+         3. Dưới góc mỗi hàng của bảng, hệ thống sẽ hiển thị thêm các nút *Chỉnh sửa*, *Lưu*, *Hủy*.\
+         4. Hai nút *Lưu* và *Hủy* sẽ mặc định không thể thao tác và chỉ làm được khi người quản lý ấn nút *Chỉnh sửa*. \
+         5. Người quản lý sẽ tiến hành chỉnh sửa bằng cách ấn vào nút *Chỉnh sửa*.\
+         6. Ở cột hình ảnh, hệ thống sẽ hiển thị nút *Upload* để người quản lý tải ảnh lên từ thiết bị.\
+         7. Ở cột Phân loại, hệ thống sẽ hiển thị dưới dạng một list các lựa chọn để cho người quản lý lựa chọn.\
+         8. Người quản lý sẽ ấn nút *Lưu* để chấp nhận thay đổi và *Hủy* để hủy bỏ thay đổi hiện tại\
+         9. Hệ thống sẽ hiển thị phía trên bảng thông tin một thanh tìm kiếm và các nút *Thêm*, *Xóa*.  \
+         10. Khi người quản lý ấn vào nút *Thêm*, bảng thông tin sẽ hiện lên một hàng trống và được hiển thị như khi ấn nút *Chỉnh sửa*.\
+         11. Khi người quản lý ấn vào nút *Xóa*, hệ thống sẽ hiển thị một nút lựa chọn để người quản lý đánh dấu các mô hình cần xóa. Bên cạnh đó, phía dưới cùng của bảng thông tin sẽ có thêm 2 nút *Xác nhận* và *Hủy*. \ 
+         12. Sau khi lựa chọn các file cần xóa, người quản lý sẽ nhấn vào nút *Xác nhận* hoặc nút *Hủy* để hủy việc xóa. \
+         13. Thông tin và trạng thái mới của các mô hình 3D sẽ được lưu xuống CSDL.\ ],
     [Exceptional flow], [
-        2.1. *Ở bước 2*, Nếu người quản lý chỉnh sửa, cập nhật thông tin mô hình không ảnh hưởng đến các đơn hàng đã được khách hàng đã thanh toán.\
-        3.1. *Ở bước 3*, Nếu người quản lý xóa thông tin mô hình không ảnh hưởng đến các đơn hàng đã được tiếp nhận trước đó.\
+        2.1. *Ở bước 8*, Nếu người quản lý xác nhận chỉnh sửa, thông tin mô hình được cập nhật sẽ không ảnh hưởng đến các đơn hàng đã được khách hàng đã thanh toán.\
+        3.1. *Ở bước 12*, Nếu người quản lý xác nhận xóa, thông tin mô hình không ảnh hưởng đến các đơn hàng đã được tiếp nhận trước đó.\
         ],
 )
 
@@ -75,10 +89,11 @@
     [Postconditions], [Khách hàng đã đặt hàng mô hình 3D thành công.],
     [Normal Flow], 
        [ 1. Khách hàng đặt hàng in bằng chọn mô hình 3D có sẵn trong hệ thống.\
-            1.1. Thêm mô hình 3D vào giỏ hàng và chọn số lượng.\
-            1.2. Xem lại thông tin mô hình 3D bao gồm: tên mô hình 3D, số lượng, đơn giá.\
-            1.3. Giỏ hàng hiển thị thống kê được các mô hình 3D, số lượng, đơn giá từng mô hình và tổng tiền của đơn hàng.\
-            1.4. Khách hàng có thể chỉnh sửa đơn hàng, có thể tùy chỉnh số lượng và xóa một hoặc nhiều mô hình 3D trong giỏ hàng.\
+            1.1. Hệ thống hiển thị danh sách các mô hình 3D có sẵn trong hệ thống.\
+            1.2. Mỗi mô hình 3D sẽ nút *Thêm vào giỏ hàng*.\
+            1.3. Khách hàng chọn mô hình 3D và nhấn nút *Thêm vào giỏ hàng*.\
+            1.4. Hệ thống sẽ thêm mô hình được chọn vào giỏ hàng. \
+            \
 
          2. Khách hàng đặt hàng in các mô hình 3D bằng file .gcode.\
             2.1. Khách hàng thêm file .gcode vào giỏ hàng và chọn số lượng, cho phép Upload nhiều file.\
