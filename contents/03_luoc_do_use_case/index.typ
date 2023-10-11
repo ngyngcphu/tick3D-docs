@@ -1,9 +1,12 @@
 = Use-case diagram and use-case scenario
 
-== Use case lựa chọn mô hình 3D (Choosing 3D model)
-
 #figure(caption: [Use-case lựa chọn mô hình 3D],
     image("../images/usecase/DACNPM-WholeSystem.png")
+)
+
+== Use case lựa chọn mô hình 3D (Choosing 3D model)
+#figure(caption: [Use-case quản lý mô hình 3D],
+    image("../images/usecase/DACNPM-ChooseModel.png")
 )
 
 #table(
@@ -99,24 +102,28 @@
     columns: (auto, auto),
     inset: 10pt,
     align: horizon,
-    [*Use Case Name*], [*AA*],
+    [*Use Case Name*], [*Xác nhận và gửi đơn hàng*],
     [Actors], [Khách hàng.],
-    [Brief Description], [],
-    [Preconditions], [],
-    [Postconditions], [],
-    [Trigger], [],
+    [Brief Description], [Khách hàng sử dụng chức năng này để xác nhận đơn hàng và gửi đơn hàng đi để được xử lý.],
+    [Preconditions], [Khách hàng đã lựa chọn được mô hình 3D hoặc upload được file .gcode lên hệ thống.],
+    [Postconditions], [Đơn hàng đã được xác nhận và gửi đi để được xử lý.],
+    [Trigger], [Khách hàng chọn các mô hình cần đặt và nhấn nút *Đặt hàng* trong giỏ hàng.],
     [Normal Flow], 
-    [ 1. \
-        2. \
+    [ 1. Hệ thống hiển thị lại thông tin người đặt bao gồm: tên khách hàng, số điện thoại và địa chỉ giao hàng, thời gian giao hàng dự kiến.
+      2. Hệ thống tính toán phí giao hàng và hiển thị lên màn hình.
+      3. Khách hàng lựa chọn phương thức thanh toán.
+      4. Khách hàng nhấn nút *Xác nhận đơn hàng*.
+      5. Hệ thống gửi thông báo đến khách hàng và người quản lý về việc đơn hàng đã được xác nhận và gửi đi để được xử lý.
+      6. Khách hàng theo dõi trạng thái đơn hàng trên hệ thống.
     ],
     [Exceptional flow], [
-        
+      *Ở bước 3*, Nếu khách hàng chưa liên kết tài khoản ngân hàng với tài khoản của mình, hệ thống sẽ yêu cầu khách hàng liên kết tài khoản ngân hàng với tài khoản của mình.\
     ],
     [Alternative flow], [
-        
+      *Ở bước 3*, Trước khi chọn phương thức thanh toán, khách hàng được phép thoát khỏi bảng xác nhận đơn hàng và quay về giỏ hàng để chỉnh sửa đơn hàng.\
     ],
 )
-#figure(caption: [Use-case xxx], table())
+#figure(caption: [Use-case xác nhận và gửi đơn hàng], table())
 
 == Use case xử lý đơn hàng (Order processing)
 #figure(caption: [Use-case xử lý đơn hàng],
