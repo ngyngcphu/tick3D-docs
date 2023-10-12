@@ -1,6 +1,6 @@
 = Use-case diagram and use-case scenario
 
-#figure(caption: [Use-case lựa chọn mô hình 3D],
+#figure(caption: [Use-case tổng quát toàn bộ hệ thống],
     image("../images/usecase/DACNPM-WholeSystem.png")
 )
 
@@ -16,9 +16,9 @@
     align: horizon,
     [*Use Case Name*], [*Lựa chọn mô hình 3D*],
     [Actors], [Khách hàng.],
-    [Brief Description], [Khách hàng sử dụng chức năng này để lựa chọn các mô hình 3D có sẵn trong hệ thống hoặc có thể lựa chọn file .gcode để in 3D.],
+    [Brief Description], [Khách hàng sử dụng chức năng này để lựa chọn các mô hình 3D có sẵn trong hệ thống.],
     [Preconditions], [Khách hàng đã truy cập được trang web của hệ thống.],
-    [Postconditions], [Khách hàng đã lựa chọn được mô hình 3D hoặc Upload được file .gcode lên hệ thống.],
+    [Postconditions], [Khách hàng đã lựa chọn được mô hình 3D và thêm các mô hình 3D này vào giỏ hàng.],
     [Normal Flow], 
        [ 1. Khách hàng có thể xem tất cả mô hình 3D ở mục *All things*.\
          2. Hệ thống sẽ hiển thị các model có sẵn theo các mục: Fashion, Hobby, Learning, Tools, Toys & Games, Art, Household.\
@@ -28,15 +28,39 @@
          6. Khách hàng có thể tìm kiếm mô hình 3D theo các bộ lọc trên.\
          7. Hệ thống sẽ hiển thị mỗi mô hình 3D dưới một khung bao gồm: hình ảnh model, thông tin model, giá tiền.\
          8. Mỗi mô hình 3D sẽ có nút *Thêm vào giỏ hàng* để khách hàng thêm mô hình 3D vào giỏ hàng.\
-         9. Khi được thêm vào giỏ hàng, mô hình 3D sẽ được hiển thị trong giỏ hàng.\
-         10. Khách hàng có thể Upload file .gcode của mô hình 3D lên hệ thống.\
-         11. Hệ thống sẽ lưu thông tin file .gcode của khách hàng xuống CSDL và hiển thị ra màn hình như những mô hình có sẵn.\
+         9. Mỗi mô hình 3D sẽ có nút *Like* để khách hàng đánh giá mô hình 3D.\
+         10. Khi được thêm vào giỏ hàng, mô hình 3D sẽ được hiển thị trong giỏ hàng.\
   
     ],
     [Exceptional flow], [*Ở bước 4*, Nếu hệ thống tìm kiếm không có kết quả trả về, hệ thống sẽ hiển thị danh sách rỗng và thông báo *Không tìm thấy*, Khách hàng có thể tìm kiếm theo bước 5, Để quay về trạng thái trước tìm kiếm, khách hàng có thể nhấn nút *X* trên thanh tìm kiếm.],
 
 )
+
 #figure(caption: [Use-case lựa chọn mô hình 3D], table())
+#table(
+    columns: (auto, auto),
+    inset: 10pt,
+    align: horizon,
+    [*Use Case Name*], [*Tải mô hình 3D*],
+    [Actors], [Khách hàng.],
+    [Brief Description], [Khách hàng sử dụng chức năng này để upload lên file .gcode của riêng mình.],
+    [Preconditions], [Khách hàng đã truy cập được trang web của hệ thống.],
+    [Postconditions], [Khách hàng upload thành công file .gcode lên hệ thống và thêm các file này vào giỏ hàng.],
+    [Normal Flow], 
+       [ 1. Bên cạnh biểu tượng người dùng trên thanh điều hướng, hệ thống sẽ cung cấp thêm một nút *Upload*.  \
+         2. Khách hàng nhấn nút *Upload* để upload file .gcode lên hệ thống.\
+         3. Hệ thống hiển thị lên màn hình một khung giao diện dùng để upload file .gcode.\
+         4. Khách hàng chọn file .gcode từ thiết bị của mình và nhấn nút *Upload* để upload file .gcode lên hệ thống.\
+         5. Khách hàng ấn nút *Xác nhận* để upload file .gcode lên hệ thống.\
+         6. Hệ thống sẽ lưu thông tin file .gcode của khách hàng xuống CSDL và hiển thị ra màn hình như những mô hình có sẵn.\
+         7. Mỗi mô hình 3D sẽ có nút *Thêm vào giỏ hàng* để khách hàng thêm mô hình 3D vào giỏ hàng.\
+         8. Khi được thêm vào giỏ hàng, mô hình 3D sẽ được hiển thị trong giỏ hàng.\
+    ],
+    [EXCEPTIONAL FLOW],[*Ở bước 5*, nếu file không có định dạng là .gcode, hệ thống sẽ hiển thị thông báo *File không hợp lệ*.],
+    [Alternative flow], [*Ở bước 2*, Khách hàng có thể nhấn nút *Hủy* để quay về trang chủ.\ *Ở bước 4* khách hàng có thể kéo thả file .gcode vào khung giao diện để upload file .gcode lên hệ thống. \ *Ở bước 5* khách hàng có thể tiếp tục ấn nút *Upload* để upload file .gcode khác lên hệ thống thay vì nút *Xác nhận*.],
+
+)
+#figure(caption: [Use-case tải mô hình 3D], table())
 
 #table(
     columns: (auto, auto),
@@ -46,24 +70,18 @@
     [Actors], [Khách hàng.],
     [Brief Description], [Khách hàng sử dụng chức năng này để đặt hàng mô hình 3D.],
     [Preconditions], [Khách hàng đã truy cập được trang web của hệ thống và lựa chọn được mô hình 3D hoặc upload được file .gcode lên hệ thống.],
-    [Postconditions], [Khách hàng đã đặt hàng mô hình 3D thành công.],
+    [Postconditions], [Khách hàng xác nhận lại các mô hình cần in và tiến tới thanh toán.],
     [Normal Flow], 
-       [ 1. Khách hàng đặt hàng in bằng chọn mô hình 3D có sẵn trong hệ thống.\
-            1.1. Hệ thống hiển thị danh sách các mô hình 3D có sẵn trong hệ thống.\
-            1.2. Mỗi mô hình 3D sẽ nút *Thêm vào giỏ hàng*.\
-            1.3. Khách hàng chọn mô hình 3D và nhấn nút *Thêm vào giỏ hàng*.\
-            1.4. Hệ thống sẽ thêm mô hình được chọn vào giỏ hàng. \
-            \
-
-         2. Khách hàng đặt hàng in các mô hình 3D bằng file .gcode.\
-            2.1. Khách hàng thêm file .gcode vào giỏ hàng và chọn số lượng, cho phép Upload nhiều file.\
-            2.2. Xem lại thông tin file .gcode bao gồm: tên file .gcode, số lượng, đơn giá.\
-            2.3. Giỏ hàng hiển thị thống kê được các file .gcode, số lượng, đơn giá và tổng tiền của đơn hàng.\
-            2.4. Khách hàng có thể chỉnh sửa đơn hàng, có thể tùy chỉnh số lượng và xóa một hoặc nhiều file .gcode trong giỏ hàng.\
+       [ 1. Bên cạnh biểu tượng người dùng trên thanh điều hướng, hệ thống sẽ cung cấp thêm một biểu tượng *Giở hàng*. \
+         2. Khách hàng nhấn nút *Giỏ hàng* để xem các mô hình 3D đã được thêm vào giỏ hàng.\
+         3. Hệ thống hiển thị lên màn hình một khung giao diện dùng để xem các mô hình 3D đã được thêm vào giỏ hàng.\
+         4. Khách hàng có thể xóa mô hình 3D trong giỏ hàng bằng cách nhấn nút *Xóa* ở cạnh mô hình 3D.\
+         5. Khách hàng có thể chỉnh sửa số lượng mô hình 3D trong giỏ hàng bằng cách nhập số lượng vào ô *Số lượng* ở cạnh mô hình 3D.\
+         6. Khách hàng có thể xóa hết các mô hình 3D trong giỏ hàng bằng cách nhấn nút *Xóa tất cả* ở cạnh mô hình 3D.\
+         7. Khách hàng có thể xác nhận đơn hàng bằng cách nhấn nút *Đặt hàng* ở cạnh mô hình 3D.\
     ],
     [Exceptional flow], [
-         *Ở bước 1.2 và 2.2*, Nếu khách hàng không chọn số lượng mô hình 3D, hệ thống sẽ mặc định số lượng đơn hàng là 1.\
-         *Ở bước 1.4 và 2.4*, Nếu khách hàng xóa hết các mô hình 3D hoặc file .gcode trong giỏ hàng, hệ thống sẽ hiển thị thông báo *Giỏ hàng trống*.\
+         *Ở bước 6*, Nếu khách hàng xóa hết các mô hình 3D hoặc file .gcode trong giỏ hàng, hệ thống sẽ hiển thị thông báo *Giỏ hàng trống*.\
         ],
 )
 #figure(caption: [Use-case đặt hàng mô hình 3D], table())
@@ -132,6 +150,7 @@
       *Ở bước 3*, Nếu khách hàng chưa liên kết tài khoản ngân hàng với tài khoản của mình, hệ thống sẽ yêu cầu khách hàng liên kết tài khoản ngân hàng với tài khoản của mình.\
     ],
     [Alternative flow], [
+      *Ở bước 1*, Khách hàng có thể chỉnh sửa thông tin người đặt hàng bằng cách nhấn nút *Chỉnh sửa* và nhập lại thông tin người đặt hàng.\
       *Ở bước 3*, Trước khi chọn phương thức thanh toán, khách hàng được phép thoát khỏi bảng xác nhận đơn hàng và quay về giỏ hàng để chỉnh sửa đơn hàng.\
     ],
 )
