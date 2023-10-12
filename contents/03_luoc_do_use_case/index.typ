@@ -4,9 +4,10 @@
     image("../images/usecase/DACNPM-WholeSystem.png")
 )
 
-== Use case lựa chọn mô hình 3D (Choosing 3D model)
-#figure(caption: [Use-case quản lý mô hình 3D],
-    image("../images/usecase/DACNPM-ChooseModel.png")
+#pagebreak()
+== Use case đặt hàng mô hình 3D (Making order 3D model)
+#figure(caption: [Use-case đặt hàng mô hình 3D],
+    image("../images/usecase/DACNPM-MakeOrder.png")
 )
 
 #table(
@@ -37,7 +38,37 @@
 )
 #figure(caption: [Use-case lựa chọn mô hình 3D], table())
 
+#table(
+    columns: (auto, auto),
+    inset: 10pt,
+    align: horizon,
+    [*Use Case Name*], [*Đặt hàng mô hình 3D*],
+    [Actors], [Khách hàng.],
+    [Brief Description], [Khách hàng sử dụng chức năng này để đặt hàng mô hình 3D.],
+    [Preconditions], [Khách hàng đã truy cập được trang web của hệ thống và lựa chọn được mô hình 3D hoặc upload được file .gcode lên hệ thống.],
+    [Postconditions], [Khách hàng đã đặt hàng mô hình 3D thành công.],
+    [Normal Flow], 
+       [ 1. Khách hàng đặt hàng in bằng chọn mô hình 3D có sẵn trong hệ thống.\
+            1.1. Hệ thống hiển thị danh sách các mô hình 3D có sẵn trong hệ thống.\
+            1.2. Mỗi mô hình 3D sẽ nút *Thêm vào giỏ hàng*.\
+            1.3. Khách hàng chọn mô hình 3D và nhấn nút *Thêm vào giỏ hàng*.\
+            1.4. Hệ thống sẽ thêm mô hình được chọn vào giỏ hàng. \
+            \
 
+         2. Khách hàng đặt hàng in các mô hình 3D bằng file .gcode.\
+            2.1. Khách hàng thêm file .gcode vào giỏ hàng và chọn số lượng, cho phép Upload nhiều file.\
+            2.2. Xem lại thông tin file .gcode bao gồm: tên file .gcode, số lượng, đơn giá.\
+            2.3. Giỏ hàng hiển thị thống kê được các file .gcode, số lượng, đơn giá và tổng tiền của đơn hàng.\
+            2.4. Khách hàng có thể chỉnh sửa đơn hàng, có thể tùy chỉnh số lượng và xóa một hoặc nhiều file .gcode trong giỏ hàng.\
+    ],
+    [Exceptional flow], [
+         *Ở bước 1.2 và 2.2*, Nếu khách hàng không chọn số lượng mô hình 3D, hệ thống sẽ mặc định số lượng đơn hàng là 1.\
+         *Ở bước 1.4 và 2.4*, Nếu khách hàng xóa hết các mô hình 3D hoặc file .gcode trong giỏ hàng, hệ thống sẽ hiển thị thông báo *Giỏ hàng trống*.\
+        ],
+)
+#figure(caption: [Use-case đặt hàng mô hình 3D], table())
+
+#pagebreak()
 == Use case quản lý mô hình 3D (Managing 3D model)
 #figure(caption: [Use-case quản lý mô hình 3D],
     image("../images/usecase/DACNPM-ManageModel.png")
@@ -74,41 +105,7 @@
 #figure(caption: [Use-case quản lý mô hình 3D], table())
 
 #pagebreak()
-== Use case đặt hàng mô hình 3D (Making order 3D model)
-#figure(caption: [Use-case đặt hàng mô hình 3D],
-    image("../images/usecase/DACNPM-MakeOrder.png")
-)
-#table(
-    columns: (auto, auto),
-    inset: 10pt,
-    align: horizon,
-    [*Use Case Name*], [*Đặt hàng mô hình 3D*],
-    [Actors], [Khách hàng.],
-    [Brief Description], [Khách hàng sử dụng chức năng này để đặt hàng mô hình 3D.],
-    [Preconditions], [Khách hàng đã truy cập được trang web của hệ thống và lựa chọn được mô hình 3D hoặc upload được file .gcode lên hệ thống.],
-    [Postconditions], [Khách hàng đã đặt hàng mô hình 3D thành công.],
-    [Normal Flow], 
-       [ 1. Khách hàng đặt hàng in bằng chọn mô hình 3D có sẵn trong hệ thống.\
-            1.1. Hệ thống hiển thị danh sách các mô hình 3D có sẵn trong hệ thống.\
-            1.2. Mỗi mô hình 3D sẽ nút *Thêm vào giỏ hàng*.\
-            1.3. Khách hàng chọn mô hình 3D và nhấn nút *Thêm vào giỏ hàng*.\
-            1.4. Hệ thống sẽ thêm mô hình được chọn vào giỏ hàng. \
-            \
 
-         2. Khách hàng đặt hàng in các mô hình 3D bằng file .gcode.\
-            2.1. Khách hàng thêm file .gcode vào giỏ hàng và chọn số lượng, cho phép Upload nhiều file.\
-            2.2. Xem lại thông tin file .gcode bao gồm: tên file .gcode, số lượng, đơn giá.\
-            2.3. Giỏ hàng hiển thị thống kê được các file .gcode, số lượng, đơn giá và tổng tiền của đơn hàng.\
-            2.4. Khách hàng có thể chỉnh sửa đơn hàng, có thể tùy chỉnh số lượng và xóa một hoặc nhiều file .gcode trong giỏ hàng.\
-    ],
-    [Exceptional flow], [
-         *Ở bước 1.2 và 2.2*, Nếu khách hàng không chọn số lượng mô hình 3D, hệ thống sẽ mặc định số lượng đơn hàng là 1.\
-         *Ở bước 1.4 và 2.4*, Nếu khách hàng xóa hết các mô hình 3D hoặc file .gcode trong giỏ hàng, hệ thống sẽ hiển thị thông báo *Giỏ hàng trống*.\
-        ],
-)
-#figure(caption: [Use-case đặt hàng mô hình 3D], table())
-
-#pagebreak()
 == Use case xác nhận và gửi đơn hàng (Confirm and send order)
 #figure(caption: [Use-case xác nhận và gửi đơn hàng],
     image("../images/usecase/DACNPM-ConfirmOrder.png")
@@ -139,7 +136,7 @@
     ],
 )
 #figure(caption: [Use-case xác nhận và gửi đơn hàng], table())
-
+#pagebreak()
 == Use case xử lý đơn hàng (Order processing)
 #figure(caption: [Use-case xử lý đơn hàng],
     image("../images/usecase/DACNPM-OrderProcess.png")
