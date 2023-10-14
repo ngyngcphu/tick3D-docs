@@ -4,7 +4,7 @@ Phần này sẽ giới thiệu sơ lược về các công nghệ được sử
 
 == Git
 
-#figure(caption: [Use-case thanh toán đơn hàng],
+#figure(caption: [Git],
     image("../images/framework/Git.png" ), 
 )
 
@@ -14,7 +14,7 @@ Một số ưu điểm của Git bao gồm tốc độ, sự đơn giản, tính
 
 == GitHub
 
-#figure(caption: [Use-case thanh toán đơn hàng],
+#figure(caption: [GitHub],
     image("../images/framework/github.png" ), 
 )
 
@@ -24,7 +24,7 @@ GitHub cũng hỗ trợ việc quản lý dự án bằng cách cung cấp các 
 #pagebreak()
 == ReactJS
 
-#figure(caption: [Use-case thanh toán đơn hàng],
+#figure(caption: [ReactJS],
     image("../images/framework/reactjs.png" ), 
 )
 ReactJS là một thư viện JavaScript được sử dụng để xây dựng giao diện người dùng. Nó được tạo ra bởi Jordan Walke, một kỹ sư phần mềm tại Facebook và được Facebook phát triển và duy trì. ReactJS là một thư viện khai báo, hiệu quả và linh hoạt, chịu trách nhiệm về lớp View của ứng dụng. Nó cho phép các nhà phát triển tạo các thành phần UI có thể tái sử dụng, có thể được lồng ghép với các thành phần khác để xây dựng các ứng dụng phức tạp từ các khối xây dựng đơn giản. ReactJS sử dụng cơ chế dựa trên DOM ảo để điền dữ liệu vào HTML DOM, cơ chế này hoạt động nhanh vì nó chỉ thay đổi các thành phần DOM riêng lẻ thay vì tải lại toàn bộ DOM mỗi lần.
@@ -32,7 +32,7 @@ ReactJS là một thư viện JavaScript được sử dụng để xây dựng 
 ReactJS có một số lợi thế so với các JavaScript framework khác như dễ sử dụng, tốc độ nhanh và có khả năng mở rộng. Nó giúp các lập trình viên xây dựng các ứng dụng web có kích thước lớn và sửa đổi dữ liệu mà tránh việc tải lại trang không cần thiết. ReactJS chỉ xử lý lớp View trong mẫu MVC của giao diện người dùng ứng dụng. ReactJS cập nhật và hiển thị các thành phần một cách hiệu quả, đồng thời xử lý khéo léo các bản cập nhật DOM. Nó có thể được tích hợp vào bất kỳ ứng dụng nào, cho dù đó là một phần của trang hay một trang hoàn chỉnh hay thậm chí là toàn bộ ứng dụng. ReactJS cũng có khả năng tương thích ngược, nghĩa là nó cũng có thể được sử dụng với các phiên bản trình duyệt cũ hơn.
 
 == Fastify
-#figure(caption: [Use-case thanh toán đơn hàng],
+#figure(caption: [Fastify],
     image("../images/framework/fastify.png" ), 
 )
 
@@ -41,7 +41,7 @@ Fastify là một web framework dành cho Node.js tập trung chủ yếu vào v
 Một trong những ưu điểm chính của Fastify nằm ở tốc độ, đạt được nhờ tối thiểu hóa chi phí và tập trung vào hiệu suất. Nó cung cấp tính năng tự động serialize và deserialize dữ liệu đến và đi, hỗ trợ việc xác thực các request, tham số định tuyến và chuẩn hóa đầu vào, khiến nó trở thành một lựa chọn an toàn để phát triển web. 
 #pagebreak()
 == Prisma
-#figure(caption: [Use-case thanh toán đơn hàng],
+#figure(caption: [Prisma],
     image("../images/framework/prisma.png" ), 
 )
 Prisma là một ORM thế hệ mới giúp đơn giản hóa quy trình làm việc với cơ sở dữ liệu và thay thế các ORM truyền thống. Nó cung cấp khả năng truy cập cơ sở dữ liệu an toàn kiểu (type-safe) với Prisma Client, di chuyển (migrate) dữ liệu với Prisma Migrate cũng như quản lý dữ liệu trực quan với Prisma Studio. Prisma Client có thể được sử dụng để xây dựng các API GraphQL, REST, gRPC và hơn thế nữa. Prisma hiện hỗ trợ nhiều hệ thống quản lý cơ sở dữ liệu như MySQL, PostgreSQL và MongoDB.
@@ -49,7 +49,7 @@ Prisma là một ORM thế hệ mới giúp đơn giản hóa quy trình làm vi
 Một số lợi ích của Prisma có thể kể đến như an toàn kiểu, API hiện đại và đọc/ghi dữ liệu quan hệ một cách linh hoạt. Prisma thống nhất quyền truy cập vào nhiều cơ sở dữ liệu cùng một lúc và từ đó giảm đáng kể độ phức tạp trong các quy trình làm việc trên nhiều cơ sở dữ liệu. Nó cũng có hệ thống sự kiện và streaming theo thời gian thực cho cơ sở dữ liệu, đảm bảo người dùng nhận được cập nhật cho tất cả các sự kiện quan trọng xảy ra trong cơ sở dữ liệu của mình.
 #pagebreak()
 == PostgreSQL
-#figure(caption: [Use-case thanh toán đơn hàng],
+#figure(caption: [PostgreSQL],
     image("../images/framework/postgresSQL.png" ), 
 )
 PostgreSQL, được phát triển và duy trì bởi một nhóm các nhà phát triển phần mềm PostgreSQL Global Development Group, là một hệ thống cơ sở dữ liệu quan hệ đối tượng nguồn mở sử dụng và mở rộng ngôn ngữ SQL kết hợp với nhiều tính năng lưu trữ và mở rộng quy mô một cách an toàn cho các khối lượng dữ liệu phức tạp nhất. PostgreSQL nổi tiếng bởi kiến trúc đã được chứng minh, độ tin cậy, tính toàn vẹn dữ liệu, bộ tính năng mạnh mẽ, khả năng mở rộng và cộng đồng nguồn mở đằng sau cung cấp nhất quán các giải pháp sáng tạo và hiệu quả.  
