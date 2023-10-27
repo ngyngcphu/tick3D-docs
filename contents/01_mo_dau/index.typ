@@ -53,7 +53,7 @@ Hệ thống được cung cấp thông qua ứng dụng web-based app, *không 
 
 == Stakeholders của dự án
 
-Dự án này bao gồm 2 stakeholders:
+Dự án này bao gồm 2 stakeholders - 2 actors chính trong mô hình in 3D:
 #block(inset: (left: 1cm))[
     1. Người quản lý: Là người trực tiếp quản lý máy in, kiểm tra và cập nhật các đơn hàng sang các trạng thái.
     2. Khách hàng: Là người đặt các mô hình 3D.
