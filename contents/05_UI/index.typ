@@ -24,6 +24,27 @@
 
 #pagebreak()
 == Category Information Of Desktop and Mobile
+Để có thể truy cập được vào trang Categories người dùng nhấn vào nút Categories trên thanh điều hướng. Trang sẽ hiển thị danh sách các sản phẩm có trong hệ thống.
+
+*Category Page - Mobile*
+#figure(caption: "Mobile View of Category Page",
+    image("../images/UI/category_page_mobile.png", fit: "contain", width: 80%, height: 80%))
+
+#figure(caption: "Mobile View of Category Page Filter",
+    image("../images/UI/category_filter_mobile.png", fit: "contain", width: 80%, height: 80%))
+#pagebreak()
+
+*Category Page - Desktop*
+#figure(caption: "Desktop View of Category Page",
+    image("../images/UI/category_page_desktop.png", fit: "contain"))    
+
+Tại trang Categories, người dùng có thể tiến hành các thao tác:
+#block(inset:(left:1cm))[
+    - Nhấn nút *Filter* để hiển thị các tùy chọn lọc theo danh mục, theo tầm giá hoặc theo ngày đăng. 
+    - Chọn mục *Sort by* để sắp xếp các sản phẩm được hiển thị theo lượt mua, lượt thích, ngày đăng hoặc giá cả.
+    - Chọn một sản phẩm cụ thể để xem chi tiết thông tin sản phẩm.
+    - Nhấn nút *Đặt hàng* để thêm một sản phẩm vào giỏ hàng.
+]
 #pagebreak()
 
 == Detail Information Model of Desktop and Mobile
