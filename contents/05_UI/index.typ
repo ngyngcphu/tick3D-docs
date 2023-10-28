@@ -75,5 +75,20 @@ Khi bước vào trang chi tiết sản phẩm (DetailModel Page), người dùn
 #pagebreak()
 
 == Checkout of Destop and Mobile
+*Checkout Page - Mobile*
+#figure(caption: "Mobile View of Checkout Page",
+    image("../images/UI/check_out_mobile.png", fit: "contain", width: 80%, height: 80%))
+
+*Category Page - Desktop*
+#figure(caption: "Desktop View of Checkout Page",
+    image("../images/UI/check_out_desktop.png", fit: "contain"))    
+
+Khi bước vào trang checkout, người dùng có thể tiến hành những thao tác sau:
+#block(inset:(left:1cm))[
+    - Điền địa chỉ nhận
+    - Chọn phương thức thanh toán
+    - Xem lại chi tiết đơn hàng và tổng hợp giá tiền
+    - Ấn nút "*Xác nhận*" để xác nhận đơn hàng
+]
 #pagebreak()
 
