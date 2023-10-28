@@ -72,6 +72,14 @@ Khi bước vào trang chi tiết sản phẩm (DetailModel Page), người dùn
 #pagebreak()
 
 == Shopping Cart of Desktop and Mobile
+Để có thể truy cập được vào trang Shopping Cart người dùng nhấn vào icon giỏ hàng trên thanh điều hướng. Trang sẽ hiển thị danh sách các sản phẩm có trong giỏ hàng của người dùng.
+*Shopping card of Desktop screen*
+#figure(caption: "UI Shopping Card of Desktop View",
+    image("../images/UI/Card-desktop.png", fit: "contain"))
+#pagebreak()
+*Shopping card of Mobile screen*
+#figure(caption: "UI Shopping Card of Mobile View",
+    image("../images/UI/Card-mobile.png", fit: "contain"))
 #pagebreak()
 
 == Checkout of Destop and Mobile
