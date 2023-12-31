@@ -84,8 +84,9 @@ Người dùng có thể click chọn các sản phẩm mô hình 3D khác vào 
 #figure(caption: "Homepage",
     image("../images/imple/D_homepagecart.png", fit: "cover"))
 
+#pagebreak()
+*Giao diện trang Category*\
 
-*Giao diện trang Category*
 Trang Category là trang hiển thị các sản phẩm theo danh mục, người dungf có thể truy cập trang Category bằng cách click chọn vào các danh mục tại thanh menu.
 #figure(caption: "Category",
     image("../images/imple/D_categories.png", fit: "cover"))
@@ -105,7 +106,7 @@ Sau khi lọc cái sản phẩm, người dùng có thể click chọn *Clear fi
 #figure(caption: "Category",
     image("../images/imple/D_cateclear2.png", fit: "cover"))
 
-Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D theo tên sản phẩm tại trang Category bnawgf thanh *Search* tại thanh menu.
+Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D theo tên sản phẩm tại trang Category bằng thanh *Search* tại thanh menu.
 #figure(caption: "Category",
     image("../images/imple/D_morden.png", fit: "cover"))
 
@@ -158,20 +159,101 @@ Nếu khách hàng nhập sai thông tin tài khoản, hệ thống sẽ hiển 
 === Mobile
 
 *Giao diện trang Homepage*
+Sau khi  dùng Mobile phone truy cập vào trang web, người dùng sẽ thấy giao diện Homepage như sau:
+#figure(caption: "Homepage",
+    image("../images/imple/M_hompage.jpg", fit: "cover", height: 50%))
 
+Trang Homepage bao gồm các thành phần sau:
+#block(inset: (left:1cm))[
+  1. Header: bao gồm logo, thanh tìm kiếm, thanh menu, thanh tài khoản
+  2. Banner: bao gồm các banner quảng cáo
+  3. Information: bao gồm các thông tin về website, nhóm bán sản phẩm
+  4. Product: bao gồm các sản phẩm
+  5. Footer: bao gồm các thông tin liên hệ, thông tin website
+]
+
+Đây là giao diện thanh Menu tại trang Homepage, khi người dùng click chọn vào biểu tượng Menu góc trên bên trái màn hình.\
+#figure(caption: "Homepage",
+    image("../images/imple/M_homepage1.jpg", fit: "cover", height: 45%))
+
+#figure(caption: "Homepage",
+    image("../images/imple/M_homepage2.jpg", fit: "cover", height: 45%))
+
+#figure(caption: "Homepage",
+    image("../images/imple/M_homepage3.jpg", fit: "cover", height: 45%))
+
+#figure(caption: "Homepage",
+    image("../images/imple/M_homepage4.jpg", fit: "cover", height: 45%))
+
+Tại trang Homepage, hệ thống sẽ cung cấp cho người dùng những mô hình 3D được mua nhiều tại cửa hàng.
+Người dùng có thể click vào mô hình để xem thông tin chi tiết của mô hình đó.\ 
+#figure(caption: "Homepage",
+    image("../images/imple/M_info.jpg", fit: "cover", height: 45%))
+
+#pagebreak()
 *Giao diện trang Category*
+
+Trang Category là trang hiển thị các sản phẩm theo danh mục, người dungf có thể truy cập trang Category bằng cách click chọn vào các danh mục tại thanh menu.
+
+#figure(caption: "Category",
+    image("../images/imple/M_cate.jpg", fit: "cover", height: 45%))
+
+Tại trang Category, hệ thống cung cấp cho người dùng các sản phẩm mô hình 3D theo theo từng danh mục như là: *All thing*, *Fashion*, *Hobby*, *Learning*, *Tools*, *Toys and Games*, *Art* và *Household*.\
+
+Ngoài ra hệ thống còn cung cấp bộ *Filter* để người dùng có thể lọc sản phẩm mô hình 3D theo danh mục *Category*, theo đánh giá *Star* và theo thời gian *Upload time* của hệ thống. Bên cạnh đó hệ thống, còn giúp người dùng lọc sản phẩm theo các thứ tự như là: *Lastest*, *Most bought*, *Most star*, *Lowest price* và *Name*.\
+
+#figure(caption: "Category",
+    image("../images/imple/M.cate2.jpg", fit: "cover", height: 45%))
+
+#figure(caption: "Category",
+    image("../images/imple/M_cate3.jpg", fit: "cover", height: 45%))
+
+Sau khi lọc cái sản phẩm, người dùng có thể click chọn *Clear filter* để xóa các bộ lọc đã chọn và hiển thị lại tất cả các sản phẩm mô hình 3D.\
+
+Đây là giao diện trang Category sau khi người dùng click chọn *Clear filter*.\
+
+Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D theo tên sản phẩm tại trang Category bằng thanh *Search* tại thanh menu.\
 
 *Giao diện trang Add cart*
 
 *Giao diện trang Payment*
 
-*Giao diện trang Login*
-
 *Giao diện trang Register*
 
+Khi tiến hành thanh toán đơn hàng, hệ thống sẽ yêu cầu người dùng đăng nhập hoặc đăng ký tài khoản để tiếp tục thanh toán. Đây lầ giao diện trang đăng ký tài khoản.
+
+#figure(caption: "Register",
+    image("../images/imple/M_signup.jpg", fit: "cover", height: 45%))
+
+Người dùng đăng ký tài khoản bằng cách điền đầy đủ thông tin như: Họ, Tên, Số điện thoại, Email và Mật khẩu.\
+Sau khi điền đầy đủ thông tin, người dùng click chọn *Gửi* để hoàn tất xác nhận đăng ký tài khoản.
+#figure(caption: "Register",
+    image("../images/imple/M_otp.jpg", fit: "cover", height: 45%))
+
+#figure(caption: "Register",
+    image("../images/imple/M_otp2.jpg", fit: "cover", height: 45%))
+
+Sau khi click chọn *Gửi*, hệ thống sẽ gửi mã OTP đến email của người dùng để xác nhận đăng ký tài khoản. Người dùng điền mã OTP vào ô *OTP* và click chọn *Xác nhận* để hoàn tất đăng ký tài khoản.
+
+Sau khi hoàn tất đăng ký tài khoản, hệ thống sẽ chuyển người dùng về trang Login để người dùng đăng nhập tài khoản.
+#figure(caption: "Register",
+    image("../images/imple/M_signupsuccess.jpg", fit: "cover", height: 45%))
+
+*Giao diện trang Login*
+
+Khi tiến hành thanh toán đơn hàng, hệ thống sẽ yêu cầu người dùng đăng nhập hoặc đăng ký tài khoản để tiếp tục thanh toán. Đây là giao diện trang đăng nhập tài khoản.
+#figure(caption: "Login",
+    image("../images/imple/M_login.jpg", fit: "cover", height: 45%))
+Khách hàng đăng nhập tài khoản bằng cách điền đầy đủ thông tin như: Email và Mật khẩu.\
+Sau khi điền đầy đủ thông tin, khách hàng click chọn *Đăng nhập* để hoàn tất đăng nhập tài khoản.\
+Nếu khách hàng nhập đúng thông tin tài khoản, hệ thống sẽ chuyển khách hàng về trang Homepage và hiển thị thông báo đăng nhập thành công.\
+#figure(caption: "Login",
+    image("../images/imple/M_signin.jpg", fit: "cover", height: 45%))
 
 
 
+
+#pagebreak()
 
 Quản trị viên truy cập vào trang web với đường dẫn: https://tick3d.tickflow.net/ và đăng nhập với tài khoản quản trị viên: \
 
