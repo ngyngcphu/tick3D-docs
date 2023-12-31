@@ -1,4 +1,5 @@
 = User Interface
+Link design Figma UI: https://www.figma.com/file/oMo6KpmM4QVeibk0IUbAZx/Home-Page?type=design&node-id=0-1&mode=design&t=o6x6lRrhsQv2RsE0-0
 == Trang chủ Tick3D
 
 #figure(caption: "Giao diện trang chủ",
