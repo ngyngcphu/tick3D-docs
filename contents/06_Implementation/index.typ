@@ -113,9 +113,44 @@ Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D t
 
 *Giao diện trang Payment*
 
-*Giao diện trang Login*
 
 *Giao diện trang Register*
+
+Khi tiến hành thanh toán đơn hàng, hệ thống sẽ yêu cầu người dùng đăng nhập hoặc đăng ký tài khoản để tiếp tục thanh toán. Đây lầ giao diện trang đăng ký tài khoản.
+#figure(caption: "Register",
+    image("../images/imple/D_signup.png", fit: "cover"))
+
+Người dùng đăng ký tài khoản bằng cách điền đầy đủ thông tin như: Họ, Tên, Số điện thoại, Email và Mật khẩu.\
+Sau khi điền đầy đủ thông tin, người dùng click chọn *Gửi* để hoàn tất xác nhận đăng ký tài khoản.
+#figure(caption: "Register",
+    image("../images/imple/D_otp.png", fit: "cover"))
+
+#figure(caption: "Register",
+    image("../images/imple/D_otpgmail.png", fit: "cover"))
+
+Sau khi click chọn *Gửi*, hệ thống sẽ gửi mã OTP đến email của người dùng để xác nhận đăng ký tài khoản. Người dùng điền mã OTP vào ô *OTP* và click chọn *Xác nhận* để hoàn tất đăng ký tài khoản.
+
+Sau khi hoàn tất đăng ký tài khoản, hệ thống sẽ chuyển người dùng về trang Login để người dùng đăng nhập tài khoản.
+#figure(caption: "Register",
+    image("../images/imple/login.png", fit: "cover"))
+
+*Giao diện trang Login*
+Khi tiến hành thanh toán đơn hàng, hệ thống sẽ yêu cầu người dùng đăng nhập hoặc đăng ký tài khoản để tiếp tục thanh toán. Đây là giao diện trang đăng nhập tài khoản.
+#figure(caption: "Login",
+    image("../images/imple/login.png", fit: "cover"))
+Khách hàng đăng nhập tài khoản bằng cách điền đầy đủ thông tin như: Email và Mật khẩu.\
+Sau khi điền đầy đủ thông tin, khách hàng click chọn *Đăng nhập* để hoàn tất đăng nhập tài khoản.\
+Nếu khách hàng nhập đúng thông tin tài khoản, hệ thống sẽ chuyển khách hàng về trang Homepage và hiển thị thông báo đăng nhập thành công.\
+#figure(caption: "Login",
+    image("../images/imple/loginsuccess.png", fit: "cover"))
+
+Nếu khách hàng nhập sai thông tin tài khoản, hệ thống sẽ hiển thị thông báo lỗi và yêu cầu khách hàng nhập lại thông tin tài khoản.
+#figure(caption: "Login",
+    image("../images/imple/loginfail.png", fit: "cover"))
+
+
+
+
 
 
 
