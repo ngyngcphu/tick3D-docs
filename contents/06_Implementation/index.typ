@@ -86,6 +86,28 @@ Người dùng có thể click chọn các sản phẩm mô hình 3D khác vào 
 
 
 *Giao diện trang Category*
+Trang Category là trang hiển thị các sản phẩm theo danh mục, người dungf có thể truy cập trang Category bằng cách click chọn vào các danh mục tại thanh menu.
+#figure(caption: "Category",
+    image("../images/imple/D_categories.png", fit: "cover"))
+Tại trang Category, hệ thống cung cấp cho người dùng các sản phẩm mô hình 3D theo theo từng danh mục như là: *All thing*, *Fashion*, *Hobby*, *Learning*, *Tools*, *Toys and Games*, *Art* và *Household*.\
+
+Ngoài ra hệ thống còn cung cấp bộ *Filter* để người dùng có thể lọc sản phẩm mô hình 3D theo danh mục *Category*, theo đánh giá *Star* và theo thời gian *Upload time* của hệ thống. Bên cạnh đó hệ thống, còn giúp người dùng lọc sản phẩm theo các thứ tự như là: *Lastest*, *Most bought*, *Most star*, *Lowest price* và *Name*.
+#figure(caption: "Category",
+    image("../images/imple/D_categories2.png", fit: "cover"))
+
+#figure(caption: "Category",
+    image("../images/imple/D_categories3.png", fit: "cover"))
+
+Sau khi lọc cái sản phẩm, người dùng có thể click chọn *Clear filter* để xóa các bộ lọc đã chọn và hiển thị lại tất cả các sản phẩm mô hình 3D.
+#figure(caption: "Category",
+    image("../images/imple/D_cateclear.png", fit: "cover"))
+Đây là giao diện trang Category sau khi người dùng click chọn *Clear filter*.
+#figure(caption: "Category",
+    image("../images/imple/D_cateclear2.png", fit: "cover"))
+
+Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D theo tên sản phẩm tại trang Category bnawgf thanh *Search* tại thanh menu.
+#figure(caption: "Category",
+    image("../images/imple/D_morden.png", fit: "cover"))
 
 *Giao diện trang Add cart*
 
