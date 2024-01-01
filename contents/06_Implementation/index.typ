@@ -318,6 +318,29 @@ Quản trị viên truy cập vào trang web với đường dẫn: https://tick
 
 === Manage category
 
+#figure(caption: "Manager",
+    image("../images/imple/M_overview.png", fit: "cover"))
+#figure(caption: "Manager",
+    image("../images/imple/M_overview2.png", fit: "cover"))
+#figure(caption: "Manager",
+    image("../images/imple/M_adddetail.png", fit: "cover"))
+#figure(caption: "Manager",
+    image("../images/imple/M_adddetail2.png", fit: "cover"))
+
+#figure(caption: "Manager",
+    image("../images/imple/M_addmodel.png", fit: "cover"))
+
+#figure(caption: "Manager",
+    image("../images/imple/M_addmodel2.png", fit: "cover"))
+
+
+#figure(caption: "Manager",
+    image("../images/imple/M_addmodel3.png", fit: "cover"))
+
+
+
+#figure(caption: "Manager",
+    image("../images/imple/M_editmodel.png", fit: "cover"))
 === Manage user
 
 === Manage order
