@@ -112,7 +112,38 @@ Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D t
 
 *Giao diện trang Add cart*
 
+Khách hàng sau khi tìm kiếm sản phẩm mô hình 3D mong muốn tại trang Category, khách hàng có thể thêm sản phẩm đó vào giỏ hàng bằng cách click chọn *Thêm vào giỏ hàng*.\
+#figure(caption: "Add cart",
+    image("../images/imple/D_addcart.png", fit: "cover"))
+
+Hoặc khách hàng có thể click chọn *Thêm vào giỏ hàng* tại trang chi tiết sản phẩm mô hình 3D.
+#figure(caption: "Add cart",
+    image("../images/imple/D_addcart2.png", fit: "cover"))
+
+Sau khi click chọn *Thêm vào giỏ hàng*, hệ thống sẽ hiển thị số lượng sản phẩm mô hình 3D đã thêm vào giỏ hàng tại thanh menu.\
+
+Khách hàng có thể xem giỏ hàng bằng cách click chọn biểu tượng *Giỏ hàng* tại thanh menu.
+
+#figure(caption: "Add cart",
+    image("../images/imple/D_cart.png", fit: "cover"))
+
+#figure(caption: "Add cart",
+    image("../images/imple/D_cart2.png", fit: "cover"))
+
+Khách hàng có thể xóa sản phẩm mô hình 3D khỏi giỏ hàng bằng cách click biểu tượng thùng rác tại sản phẩm mô hình 3D muốn xóa. Khách hàng cũng có thể tăng hoặc giảm số lượng sản phẩm mô hình 3D muốn mua bằng cách click chọn biểu tượng *+* hoặc *-* tại sản phẩm mô hình 3D muốn thay đổi số lượng.\
+#figure(caption: "Add cart",
+    image("../images/imple/D_cart.png", fit: "cover"))
+
+#pagebreak()
 *Giao diện trang Payment*
+
+Sau khi khách hàng đã chọn những sản phẩm muốn mua tại trang web, tại trang giỏ hàng khách hàng click chọn *Thanh toán* để tiến hành thanh toán đơn hàng.
+#figure(caption: "Add cart",
+    image("../images/imple/D_cart2.png", fit: "cover"))
+Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đến trang Payment để khách hàng tiến hành thanh toán đơn hàng.
+
+
+
 
 
 *Giao diện trang Register*
@@ -215,6 +246,8 @@ Sau khi lọc cái sản phẩm, người dùng có thể click chọn *Clear fi
 Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D theo tên sản phẩm tại trang Category bằng thanh *Search* tại thanh menu.\
 
 *Giao diện trang Add cart*
+
+
 
 *Giao diện trang Payment*
 
