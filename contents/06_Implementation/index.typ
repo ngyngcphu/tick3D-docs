@@ -138,24 +138,22 @@ Khách hàng có thể xóa sản phẩm mô hình 3D khỏi giỏ hàng bằng 
 *Giao diện trang Payment*
 
 Sau khi khách hàng đã chọn những sản phẩm muốn mua tại trang web, tại trang giỏ hàng khách hàng click chọn *Thanh toán* để tiến hành thanh toán đơn hàng.
-#figure(caption: "Giao diện hiển thị việc thanh toán đơn hàng trên màn hình desktop",
+#figure(caption: "Nút thanh toán tại trang giỏ hàng",
     image("../images/imple/D_cart2.png", fit: "cover"))
 Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đến trang Payment để khách hàng tiến hành thanh toán đơn hàng.
 
-
-#figure(caption: "Payment",
+#figure(caption: "Giao diện hiển thị việc thanh toán đơn hàng trên màn hình desktop",
     image("../images/imple/D_payment.png", fit: "cover"))
-
-
-#figure(caption: "Payment",
+Người dùng điền đầy đủ địa chỉ giao hàng như: quận, phường, số nhà, ghi chú và ấn nút *PayPal* để tiến hành thanh toán đơn hàng. Lúc này, hệ thống sẽ chuyển hướng người dùng đến trang PayPal để tiến hành thanh toán đơn hàng.
+#figure(caption: "Giao diện chuyển hướng đến trang PayPal để thanh toán đơn hàng trên màn hình desktop",
+    image("../images/imple/D_payment2.png", fit: "cover"))
+Người dùng ấn nút *Complete Purchase* để hoàn tất thanh toán đơn hàng.
+#figure(caption: "Giao diện hiển thị thoogn báo thanh toán đơn hàng thành công trên màn hình desktop",
+    image("../images/imple/D_payment3.png", fit: "cover"))
+Bên cạnh đó, người dùng có thể click chọn *Debit or Credit Card* để thanh toán đơn hàng bằng thẻ ngân hàng.
+#figure(caption: "Giao diện hiển thị việc thanh toán đơn hàng bằng thẻ ngân hàng trên màn hình desktop",
     image("../images/imple/D_payment1.png", fit: "cover"))
 
-#figure(caption: "Payment",
-    image("../images/imple/D_payment2.png", fit: "cover"))
-
-
-#figure(caption: "Payment",
-    image("../images/imple/D_payment3.png", fit: "cover"))
 
 #pagebreak()
 *Giao diện trang Register*
@@ -288,25 +286,17 @@ Sau khi khách hàng đã chọn những sản phẩm muốn mua tại trang web
     image("../images/imple/M_cart.png", fit: "cover", height: 50%))
 Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đến trang Payment để khách hàng tiến hành thanh toán đơn hàng.
 
-#figure(caption: "Payment",
+#figure(caption: "Giao diện hiển thị việc thanh toán đơn hàng trên màn hình mobile",
     image("../images/imple/M_payment.png", fit: "cover", height: 45%))
-
-
-#figure(caption: "Payment",
-    image("../images/imple/M_payment1.png", fit: "cover", height: 45%))
-
-#figure(caption: "Payment",
+Người dùng điền đầy đủ địa chỉ giao hàng như: quận, phường, số nhà, ghi chú và ấn nút *PayPal* để tiến hành thanh toán đơn hàng. Lúc này, hệ thống sẽ chuyển hướng người dùng đến trang PayPal để tiến hành thanh toán đơn hàng.
+#figure(caption: "Giao diện chuyển hướng đến trang PayPal để thanh toán đơn hàng trên màn hình mobile",
     image("../images/imple/M_payment2.png", fit: "cover", height: 45%))
-
-
-#figure(caption: "Payment",
+Người dùng ấn nút *Complete Purchase* để hoàn tất thanh toán đơn hàng.
+#figure(caption: "Giao diện hiển thị thông báo thanh toán đơn hàng thành công trên màn hình mobile",
     image("../images/imple/M_payment3.png", fit: "cover", height: 45%))
-
-
-#figure(caption: "Payment",
+Bên cạnh đó, người dùng có thể click chọn *Debit or Credit Card* để thanh toán đơn hàng bằng thẻ ngân hàng.
+#figure(caption: "Giao diện hiển thị việc thanh toán đơn hàng bằng thẻ ngân hàng trên màn hình mobile",
     image("../images/imple/M_payment4.png", fit: "cover", height: 45%))
-
-
 #pagebreak()
 *Giao diện trang Register*
 
@@ -345,36 +335,45 @@ Nếu khách hàng nhập đúng thông tin tài khoản, hệ thống sẽ chuy
 
 #pagebreak()
 
+=== *Portfolio management*
 Quản trị viên truy cập vào trang web với đường dẫn: https://tick3d.tickflow.net/ và đăng nhập với tài khoản quản trị viên: \
-
-=== Manage category
-
-#figure(caption: "Manager",
+Quản trị viên có thể xem lại tổng quát các thông tin thống kê của cửa hàng tại trang Dashboard. Tại đây, quản trị viên có thể xem:
+- Thống kê số lượng mô hình 3D theo danh mục: Quản trị viên có thể xem tổng số mô hình theo danh mục và tỉ lệ phần trăm của từng danh mục mô hình.
+- Thống kê số lượng mô hình 3D được upload theo từng giai đoạn của từng danh mục mô hình: Quản trị viên có thể xem tổng số mô hình được upload theo từng giai đoạn của từng danh mục mô hình.
+- Thống kê mô hình 3D được mua nhiều nhất theo từng danh mục: Quản trị viên có thể xem mô hình 3D được mua nhiều nhất theo từng danh mục.
+- Thống kê người dùng theo từng giai đoạn: Quản trị viên có thể xem tổng số người dùng theo từng giai đoạn.
+- Thống kê doanh thu của cửa hàng theo từng giai đoạn của từng danh mục mô hình: Quản trị viên có thể xem tổng doanh thu của cửa hàng theo từng giai đoạn.
+#figure(caption: "Giao diện trang Dashboard trên màn hình desktop",
     image("../images/imple/M_overview.png", fit: "cover"))
-#figure(caption: "Manager",
+#figure(caption: "Giao diện trang Dashboard trên màn hình desktop",
     image("../images/imple/M_overview2.png", fit: "cover"))
-#figure(caption: "Manager",
-    image("../images/imple/M_adddetail.png", fit: "cover"))
-#figure(caption: "Manager",
-    image("../images/imple/M_adddetail2.png", fit: "cover"))
-
-#figure(caption: "Manager",
+#pagebreak()
+=== *Model management*
+Tại mục *Category*, quản trị viên có thể xem danh sách các danh mục mô hình hiện có của cửa hàng. Quản trị viên có thể thêm, sửa hoặc xóa danh mục mô hình thông qua các nút *Thêm danh mục*, *Chỉnh sửa* và *Xóa*.
+#figure(caption: "Giao diện trang quản lý danh mục mô hình trên màn hình desktop",
     image("../images/imple/M_addmodel.png", fit: "cover"))
-
-#figure(caption: "Manager",
+Khi click vào nút *Thêm mô hình*, hệ thống sẽ hiển thị giao diện thêm mô hình. Tại đây, quản trị viên có thể thêm mô hình mới bằng cách điền đầy đủ thông tin của mô hình và click chọn *Thêm mô hình*.
+#figure(caption: "Giao diện trang thêm mô hình trên màn hình desktop",
     image("../images/imple/M_addmodel2.png", fit: "cover"))
-
-
-#figure(caption: "Manager",
+Nếu một trong các trường thông tin bị bỏ trống, hệ thống sẽ hiển thị thông báo lỗi và yêu cầu quản trị viên nhập đầy đủ thông tin của mô hình.
+#figure(caption: "Giao diện thông báo lỗi khi thêm mô hình trên màn hình desktop",
     image("../images/imple/M_addmodel3.png", fit: "cover"))
-
-
-
-#figure(caption: "Manager",
+Khi chọn vào một mô hình, quản trị viên có thể xem chi tiết các số liệu thống kê của mô hình đó. Tại đây, quản trị viên có thể xem:
+- Thông tin chi tiết của mô hình: Quản trị viên có thể xem toàn bộ thông tin của mô hình cũng như thay đổi hoặc xóa mô hình thông qua các nút *Chỉnh sửa* và *Xóa*.
+#figure(caption: "Giao diện chỉnh sửa thông tin mô hình trên màn hình desktop",
     image("../images/imple/M_editmodel.png", fit: "cover"))
-=== Manage user
-
-=== Manage order
-
+- Thông tin chi tiết về doanh thu của mô hình: Quản trị viên có thể xem số lượng người mua mô hình, số lượng mô hình đã bán được, doanh thu của mô hình, thống kê số lượng mô hình được mua theo từng thời điểm và phần trăm doanh thu của mô hình so với tổng doanh thu của cửa hàng.
+#figure(caption: "Giao diện trang quản lý mô hình trên màn hình desktop",
+    image("../images/imple/M_adddetail.png", fit: "cover"))
+#figure(caption: "Giao diện trang quản lý sản phẩm trên màn hình desktop",
+    image("../images/imple/M_adddetail2.png", fit: "cover"))
+#pagebreak()
+=== *Order management*
+Tại mục *Order management*, quản trị viên có thể xem danh sách các đơn hàng của cửa hàng. Quản trị viên sẽ xem được các thông tin của đơn hàng như là: *Mã đơn hàng*, *Ngày đặt hàng*, *Tên khách hàng*, *Tổng tiền* và hai nút *Chấp nhận* và *Từ chối* để quản trị viên có thể chấp nhận hoặc từ chối đơn hàng. Bên cạnh đó còn có một thanh trạng thái để quản trị viên có thể lọc đơn hàng theo trạng thái của đơn hàng.
+#figure(caption: "Giao diện trang quản lý đơn hàng trên màn hình desktop",
+    image("../images/imple/tracking.png", fit: "cover"))
+Khi click chọn vào một đơn hàng, quản trị viên có thể xem chi tiết đơn hàng đó.
+#figure(caption: "Giao diện trang chi tiết đơn hàng trên màn hình desktop",
+    image("../images/imple/tracking2.png", fit: "cover"))
 #pagebreak()
 
