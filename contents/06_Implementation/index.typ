@@ -145,7 +145,7 @@ Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đ�
 
 
 
-
+#pagebreak()
 *Giao diện trang Register*
 
 Khi tiến hành thanh toán đơn hàng, hệ thống sẽ yêu cầu người dùng đăng nhập hoặc đăng ký tài khoản để tiếp tục thanh toán. Đây lầ giao diện trang đăng ký tài khoản.
@@ -247,10 +247,34 @@ Ngoài ra, người dùng còn có thể tìm kiếm sản phẩm mô hình 3D t
 
 *Giao diện trang Add cart*
 
+Khách hàng sau khi tìm kiếm sản phẩm mô hình 3D mong muốn tại trang Category, khách hàng có thể thêm sản phẩm đó vào giỏ hàng bằng cách click chọn *Thêm vào giỏ hàng*.\
+#figure(caption: "Add cart",
+    image("../images/imple/M_addcart.jpg", fit: "cover", height: 50%))
 
+Hoặc khách hàng có thể click chọn *Thêm vào giỏ hàng* tại trang chi tiết sản phẩm mô hình 3D.
+#figure(caption: "Add cart",
+    image("../images/imple/M_addcart2.jpg", fit: "cover", height: 50%))
 
+Sau khi click chọn *Thêm vào giỏ hàng*, hệ thống sẽ hiển thị số lượng sản phẩm mô hình 3D đã thêm vào giỏ hàng tại thanh menu.\
+
+Khách hàng có thể xem giỏ hàng bằng cách click chọn biểu tượng *Giỏ hàng* tại thanh menu.
+
+#figure(caption: "Add cart",
+    image("../images/imple/M_cart.png", fit: "cover", height: 50%))
+
+Khách hàng có thể xóa sản phẩm mô hình 3D khỏi giỏ hàng bằng cách click biểu tượng thùng rác tại sản phẩm mô hình 3D muốn xóa. Khách hàng cũng có thể tăng hoặc giảm số lượng sản phẩm mô hình 3D muốn mua bằng cách click chọn biểu tượng *+* hoặc *-* tại sản phẩm mô hình 3D muốn thay đổi số lượng.\
+#figure(caption: "Add cart",
+    image("../images/imple/M_cart.png", fit: "cover", height: 50%))
+
+#pagebreak()
 *Giao diện trang Payment*
 
+Sau khi khách hàng đã chọn những sản phẩm muốn mua tại trang web, tại trang giỏ hàng khách hàng click chọn *Thanh toán* để tiến hành thanh toán đơn hàng.
+#figure(caption: "Add cart",
+    image("../images/imple/M_cart.png", fit: "cover", height: 50%))
+Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đến trang Payment để khách hàng tiến hành thanh toán đơn hàng.
+
+#pagebreak()
 *Giao diện trang Register*
 
 Khi tiến hành thanh toán đơn hàng, hệ thống sẽ yêu cầu người dùng đăng nhập hoặc đăng ký tài khoản để tiếp tục thanh toán. Đây lầ giao diện trang đăng ký tài khoản.
