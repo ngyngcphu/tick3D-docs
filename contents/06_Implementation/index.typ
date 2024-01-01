@@ -143,7 +143,19 @@ Sau khi khách hàng đã chọn những sản phẩm muốn mua tại trang web
 Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đến trang Payment để khách hàng tiến hành thanh toán đơn hàng.
 
 
+#figure(caption: "Payment",
+    image("../images/imple/D_payment.png", fit: "cover"))
 
+
+#figure(caption: "Payment",
+    image("../images/imple/D_payment1.png", fit: "cover"))
+
+#figure(caption: "Payment",
+    image("../images/imple/D_payment2.png", fit: "cover"))
+
+
+#figure(caption: "Payment",
+    image("../images/imple/D_payment3.png", fit: "cover"))
 
 #pagebreak()
 *Giao diện trang Register*
@@ -275,6 +287,21 @@ Sau khi khách hàng đã chọn những sản phẩm muốn mua tại trang web
 #figure(caption: "Giao diện hiển thị việc thanh toán đơn hàng trên màn hình mobile",
     image("../images/imple/M_cart.png", fit: "cover", height: 50%))
 Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đến trang Payment để khách hàng tiến hành thanh toán đơn hàng.
+
+#figure(caption: "Payment",
+    image("../images/imple/M_payment.png", fit: "cover", height: 45%))
+
+
+#figure(caption: "Payment",
+    image("../images/imple/M_payment1.png", fit: "cover", height: 45%))
+
+#figure(caption: "Payment",
+    image("../images/imple/M_payment2.png", fit: "cover", height: 45%))
+
+
+#figure(caption: "Payment",
+    image("../images/imple/M_payment3.png", fit: "cover", height: 45%))
+
 
 #pagebreak()
 *Giao diện trang Register*
