@@ -148,4 +148,74 @@ Các thành phần của trang thanh toán
     - *Nút xác nhận*: Người dùng tiến hành xác nhận đơn hàng và tiến hành thanh toán.
 ]
 #pagebreak()
+== Trang overview quản lý mô hình
+Để có thể truy cập được vào trang quản lý mô hình, người quản trị đã đăng nhập bằng tài khoản quản trị.
+#figure(caption: "Giao diện trang quản lý mô hình",
+    image("../images/UI/Manager_overview.png", fit: "contain"))
 
+Các thành phần của trang quản lý mô hình bao gồm các biểu đồ thống kê:
+#enum(
+    enum.item(1)[
+        *Biểu đồ thống kê sản phẩm*: Hiển thị ra các biểu đồ thống kê về số lượng mô hình được đăng tải theo các danh mục sản phẩm.
+    ],
+    enum.item(2)[
+        *Biểu đồ thống kê sản phẩm được upload*: Hiển thị ra các biểu đồ thống kê về số lượng mô hình được upload theo thời gian.
+    ],
+    enum.item(3)[
+        *Biểu đồ thống kê top 10 sản phẩm*: Hiển thị ra các biểu đồ thống kê về top 10 sản phẩm được mua nhiều nhất.
+    ],
+    enum.item(4)[
+        *Biểu đồ thống kê người dùng*: Hiển thị ra các biểu đồ thống kê về số lượng người dùng cũ và mới.
+    ],
+    enum.item(5)[
+        *Biểu đồ thống kê doanh thu*: Hiển thị ra các biểu đồ thống kê về doanh thu theo thời gian.
+    ]
+)
+#pagebreak()
+== Trang quản lý mô hình 3D chi tiết
+Người quản trị sau khi nhấn vào một trong các mô hình ở trang quản lý mô hình sẽ được chuyển hướng sang trang quản lý mô hình chi tiết.
+#figure(caption: "Giao diện trang quản lý mô hình chi tiết",
+    image("../images/UI/Manager_model.png", fit: "contain"))
+
+Các thành phần của trang quản lý mô hình chi tiết:
+#enum(
+    enum.item(1)[
+        *Thông tin mô hình*: Hiển thị ra thông tin chi tiết của mô hình. Các thông tin của mô hình bao gồm: Tên mô hình, Ảnh mô hình, Thông tin chi tiết, Giá sản phẩm, Ngày chỉnh sửa.
+    ],
+    enum.item(2)[
+        *Cập nhật thông tin mô hình*: Người quản trị có thể tiến hành cập nhật thông tin của mô hình. 
+    ],
+    enum.item(3)[
+        *Thống kê số lượng mô hình*: Hiển thị ra số lượng người mua mô hình, số lượng mô hình được bán ra, tổng doanh thu của mô hình.
+    ],
+    enum.item(4)[
+        *Thống kê bằng biểu đồ*: Hiển thị ra các biểu đồ thống kê về số lượng mô hình được mua theo thời gian và biểu đồ thống kê về doanh thu mô hình so với doanh thu của hệ thống.
+    ],
+    enum.item(5)[
+        *Danh sách người mua mô hình*: Hiển thị ra danh sách người mua mô hình.
+    ]
+)
+
+#pagebreak()
+== Trang quản lý đơn hàng
+Người quản trị sau khi nhấn vào nút *"Quản lý đơn hàng"* ở trang quản lý mô hình sẽ được chuyển hướng sang trang quản lý đơn hàng.
+
+#figure(caption: "Giao diện trang quản lý đơn hàng",
+    image("../images/UI/Manager_order.png", fit: "contain"))
+
+Các thành phần của trang quản lý đơn hàng:
+#enum(
+    enum.item(1)[
+        *Thanh quá trình đơn hàng*: Hiển thị ra các trạng thái của đơn hàng.
+    ],
+    enum.item(2)[
+        *Danh sách đơn hàng*: Hiển thị ra danh sách các đơn hàng của người dùng.
+    ]
+
+)
+Khi nhấn vào một trong các đơn hàng, người quản trị sẽ được chuyển hướng sang trang quản lý đơn hàng chi tiết.
+#figure(caption: "Giao diện trang quản lý đơn hàng chi tiết",
+    image("../images/UI/Manager_detail.png", fit: "contain", height: 70%))
+
+Thông tin của trang quản lý đơn hàng chi tiết bao gồm: Họ và tên khách hàng, Số điện thoại, Địa chỉ, Tổng tiền, Danh sách mô hình.
+#pagebreak()
