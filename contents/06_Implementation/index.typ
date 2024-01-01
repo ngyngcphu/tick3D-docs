@@ -303,6 +303,10 @@ Sau khi click chọn *Thanh toán*, hệ thống sẽ chuyển khách hàng đ�
     image("../images/imple/M_payment3.png", fit: "cover", height: 45%))
 
 
+#figure(caption: "Payment",
+    image("../images/imple/M_payment4.png", fit: "cover", height: 45%))
+
+
 #pagebreak()
 *Giao diện trang Register*
 
